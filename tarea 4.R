@@ -3,7 +3,7 @@
 ejemplos = sample(c("positivo", "negativo", "neutros"), 100, replace = TRUE)
 #creo una seccion llamada ejemplo el cual contiene al azar 100 elementos que dicen positivo negativo y neutros
 
-#ejercicio 2
+#ejercicio 1.1
 
 Count(ejemplos)
 #no me lo reconoce como una formula
@@ -15,7 +15,7 @@ tabla <- as.data.frame(table(cyl = ejemplos))
 print(tabla)
 #agrupa los valores de la variable ejemplos y calcula su frecuencia absoluta en una tabla
 
-#ejercicio 2.1
+#ejercicio 2
 
 ejemplos2 = sample(c("positivo", "negativo", "neutros"), 10, replace = TRUE)
 View(ejemplos1)
@@ -39,6 +39,9 @@ identical(x = ejemplos_2,y = ejemplos_3)
 #le decimos a rstudio que al crear aleatoriamente sus variables lo haga con su combinación aleatoria numero 10
 # por eso al crear nuestro ejemplo 2 y 3 pero le decimos que de todas las combinaciónes aleatorias
 #que rstudio elige, lo haga con su elección numero "10" los dos ejemplos, por eso los resultados tienen el mismo orden.
+
+#ejercicio 3
+
 
 set.seed(66)
 ejemplos_4 = sample(c("positivo", "negativo", "neutros"), 10, replace = TRUE)
